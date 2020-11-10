@@ -1,0 +1,57 @@
+<ActionBar
+  title="Haberler"
+  style="color: black; background-color: #e6ddd6;"
+  icon=""
+  class="action-bar"
+>
+  <NavigationButton
+    text="Geri"
+    android.systemIcon="ic_menu_back"
+    (tap)="goBack()"
+  >
+  </NavigationButton>
+</ActionBar>
+
+<GridLayout class="news">
+  <ListView [items]="tamamlananDizi">
+    <ng-template let-item="item">
+      <StackLayout
+        style="
+          border-width: 5px;
+          border-color: gray;
+          border-left-width: 0px;
+          border-right-width: 0;
+          border-top-width: 0px;
+        "
+      >
+        <FlexLayout>
+          <Label
+            style="color: darkmagenta; font-weight: bold; font-size: 15px;"
+            textWrap="true"
+            [text]="item.title"
+          ></Label>
+
+          <Image src="{{ item.image }}"></Image>
+
+          <Label
+            style="height: 350px;"
+            textWrap="true"
+            [text]="item.description"
+            style="font-size: 13px;"
+          ></Label>
+          <WrapLayout>
+            <Label
+              style="color: darkred; text-align: left;"
+              textWrap="true"
+              [text]="item.pubDate | date: 'dd/MM/yyyy HH:mm'"
+            ></Label>
+            <HtmlView
+              style="margin-left: 400px; margin-top: 75px;"
+              html="<div > <a href='{{ item.link }}'>Devamını Oku. </a> </div>"
+            ></HtmlView>
+          </WrapLayout>
+        </FlexLayout>
+      </StackLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>

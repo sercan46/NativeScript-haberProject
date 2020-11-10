@@ -1,0 +1,51 @@
+/* Add mobile styles for the component here.  */
+.page {
+  flex: 1;
+  align-items: center;
+  background-image: url("~/images/login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.action-label {
+  color: #9093a7;
+  font-size: 20;
+  font-weight: bold;
+  vertical-align: center;
+}
+.form {
+  width: 100%;
+  margin-left: 30;
+  margin-right: 30;
+  color: white;
+}
+
+.header {
+  font-size: 28;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-align: center;
+  color: darkred;
+  font-weight: 300;
+  height: 180;
+  width: 250;
+  margin-bottom: 20;
+
+}
+
+.input-field {
+  margin-bottom: 20;
+}
+
+.input {
+  font-size: 20;
+  color: black;
+}
+
+.btn-primary {
+  height: 50;
+  border-radius: 15;
+  background-color: black;
+  font-size: 20;
+  font-weight: 600;
+  color: white;
+}

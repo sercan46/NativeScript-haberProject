@@ -1,0 +1,34 @@
+<ActionBar title="Hoş Geldiniz" class="action-label"> </ActionBar>
+
+<FlexboxLayout class="page">
+  <StackLayout class="form">
+    <Image   class="header" src="~/images/giris.png"></Image>
+    <StackLayout class="input-field">
+      <TextField
+        class="input"
+        style="placeholder-color: rgba(18, 89, 199, 1);"
+        hint="E-Mail Adresi"
+        [(ngModel)]="userName"
+      ></TextField>
+      <StackLayout class="hr-light"></StackLayout>
+    </StackLayout>
+
+    <StackLayout class="input-field">
+      <TextField
+        class="input"
+        style="placeholder-color: rgba(18, 89, 199, 1);"
+        secure="true"
+        hint="Şifre"
+        [(ngModel)]="password"
+      ></TextField>
+      <StackLayout class="hr-light"></StackLayout>
+    </StackLayout>
+
+    <Button
+      text="Giriş Yap"
+      (tap)="registeredUser($event)"
+      class="btn btn-primary"
+    ></Button>
+    <Button text="Kayıt Ol" (tap)="kayitOl()" class="btn btn-primary"></Button>
+  </StackLayout>
+</FlexboxLayout>

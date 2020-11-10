@@ -1,0 +1,40 @@
+/* Add mobile styles for the component here.  */
+.page {
+	flex: 1;
+	align-items: center;
+	background-image: url('~/images/register.jpg');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form {
+	width: 100%;
+	margin-left: 30;
+	margin-right: 30;
+}
+
+.header {
+	font-size: 28;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+	color: #E84C3D;
+	font-weight: 600;
+	margin-bottom: 70;
+	height: 100;
+}
+
+.input-field {
+	margin-bottom: 20
+}
+
+.input {
+	font-size: 20;
+}
+
+.btn-primary {
+	height: 50;
+	border-radius: 15;
+	background-color:white;
+	font-size: 20;
+	font-weight: 600;
+}
